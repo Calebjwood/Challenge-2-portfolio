@@ -5,7 +5,7 @@
 }
 
 :root{
-    --darkblue: #0d0d8f;
+    --darkblue: #3131cf;
 }
 
 .header{
@@ -40,10 +40,54 @@ margin-top: 5rem;
     color: white;
     text-decoration: none;
 }
+/* 
+.main{
 
-/* .main{
 } */
 
+.titles{
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    text-align: right;
+}
+
+.aside1{
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    font-size: 4rem;
+}
+
+.aside2{
+     position: absolute;
+     top: 20rem;
+     left: 10rem;
+     font-size: 4rem;
+}
+    
+.aside3{
+     position: absolute;
+     left: 10rem;
+     top: 154rem;
+     font-size: 4rem;
+}
+
+.about-me{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.content {
+    width: 75%;
+    display: inline;
+    float: right;
+    margin-left: 20px;
+   
+}
 
 .row{
     display: flex;
@@ -94,8 +138,11 @@ margin-top: 5rem;
 }
 
 
+        
+
 h2,
-h3{
+h3,
+h4{
     color: var(--darkblue)
 }
 
@@ -103,13 +150,23 @@ h3{
 
 .contact-info ul li,
 .contact-info a{
-    display:inline-block;
+    display: inline;
     margin: 0 2rem;
-    color: var(--darkblue);
+    color: rgb(236, 229, 229);
     float: right;
     font-size: 2rem;  
     text-decoration: none;
+    background-color: var(--darkblue);
 
 }
+
+footer section{
+    width: 75%;
+    float: inline-end;
+    display: inline;
+    margin-left: 20px;
+    background-color: var(--darkblue);
+}
+
 
 
