@@ -100,11 +100,13 @@ section{
 
         /* PROJECT */
 .content {
+    height: 200vh;
     width: 75%;
     display: inline;
     float: right;
     margin-left: 20px;
-   
+    background-color:rgb(252, 247, 240) ;
+    border-left: solid 2px var(--darkblue);
 }
 
 .row{
@@ -185,7 +187,6 @@ footer section{
     font-size: 2rem;  
     text-decoration: none;
     background-color: var(--darkblue);
-
 }
 
 
