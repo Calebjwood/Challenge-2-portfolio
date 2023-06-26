@@ -5,9 +5,22 @@
     padding: 0;
     margin: 0;
 }
+.page-container{
+    position: relative;
+    min-height: 100vh;
+}
+.content-wrap{
+    padding-bottom: 2.5rem;
+}
 
 :root{
     --darkblue: #3131cf;
+}
+
+.projects-header{
+    background-color:rgb(252, 247, 240) ;
+    font-size: 3rem;
+    padding: 7rem 0 0 10rem;
 }
 
 h2,
@@ -54,7 +67,7 @@ margin-top: 5rem;
 
 /* MAIN  */
         /* ASIDE */
-.titles{
+/* .titles{
     padding-right: 20px;
     margin: o;
     padding: 20px;
@@ -82,25 +95,40 @@ margin-top: 5rem;
 .aside3{
      position: relative;
      left: 2rem;
-     top: 150rem;
+     top: 140rem;
      font-size: 4rem;
+} */
+
+.about-me h2{
+    
+    text-align: left;
+    padding: 0 4rem 0 0;
+    margin: auto 0;
+}
+
+section p{
+    overflow: wrap;
+    text-align: center;
+
 }
 
 section{
     background-color:rgb(252, 247, 240) ;
-    border-left: solid 2px var(--darkblue);
+    
 }
 
         /* ABOUT ME */
 .about-me{
     font-size: 2rem;
     padding: 3rem 0 4rem 8rem;
+    border-bottom: solid 2px var(--darkblue);
+    
     
 }
 
         /* PROJECT */
 .content {
-    width: 75%;
+    width: 100%;
     display: inline;
     float: right;
     margin-left: 20px;
@@ -115,6 +143,11 @@ section{
 
 .justify-center{
     justify-content: center;
+}
+
+.content h2{
+    top: 0;
+    
 }
 
 .main-project{
@@ -139,11 +172,11 @@ section{
      
 }
 
-.main-project .card-header{
+.main-project .project-card .card-header{
     position: relative;
     margin: -4rem 0 1,5rem 0;
     padding: 0.5rem 1rem;
-    background-color: red;
+    background-color: rgb(224, 14, 14);
     border: 2px solid black;
     border-radius: 8px;
     width: 9rem;
@@ -153,11 +186,18 @@ section{
     position: relative;
     margin: -4rem 0 1,5rem 0;
     padding: 0.5rem 1rem;
-    background-color: red;
+    background-color: rgb(236, 13, 13);
     border: 2px solid black;
     border-radius: 8px;
     width: 9rem;
 
+}
+
+
+
+.project-card:hover,
+.project-card:hover .card-header {
+    box-shadow: inset -32rem -32rem 8px red, 0 0 15px red;
 }
 
 .imgsize{
@@ -167,8 +207,10 @@ section{
 
 
 /* FOOTER */
+
+
 footer section{
-    width: 75%;
+    width: 100%;
     float: inline-end;
     display: inline;
     margin: auto 0;
